@@ -3,13 +3,68 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header styling */
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
+    position: fixed; /* Hace que el header sea fijo */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para destacar */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #FFD700; /* Cambia el color del texto para mayor contraste */
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.nav-box {
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-box:hover {
+    background-color: #0056b3;
+}
+
+/* Back link styling */
+.back-link {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
 }
 
 section {
@@ -57,4 +112,88 @@ footer {
 
 .contact-form button:hover {
     background: #45a049;
+}
+
+form {
+    max-width: 400px;
+    margin: 8rem auto; /* Espacio superior e inferior uniforme */
+    padding: 2rem; /* Incrementa el padding para mayor simetría */
+    background: #fff;
+    border-radius: 12px; /* Bordes más redondeados para un diseño más moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    border: 1px solid #ccc; /* Agrega un borde sutil */
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ocupa el 80% de la altura de la ventana */
+    padding: 1rem;
+}
+
+main p {
+    background-color: #f9f9f9;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    background-color: #f9f9f9;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.location-link:hover {
+    background-color: #007BFF;
+    color: #fff;
 }
