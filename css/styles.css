@@ -6,23 +6,23 @@ body {
     color: #333;
 }
 
-/* Header styling */
+
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
-    position: fixed; /* Hace que el header sea fijo */
+    position: fixed; 
     top: 0;
     width: 100%;
-    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para destacar */
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 header h1 {
     margin: 0;
     font-size: 1.8rem;
-    color: #FFD700; /* Cambia el color del texto para mayor contraste */
+    color: #FFD700;
 }
 
 .navigation {
@@ -48,7 +48,7 @@ header h1 {
     background-color: #0056b3;
 }
 
-/* Back link styling */
+
 .back-link {
     display: inline-block;
     margin: 1rem auto;
@@ -64,7 +64,7 @@ header h1 {
 
 .back-link:hover {
     background-color: #0056b3;
-    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+    transform: scale(1.05);
 }
 
 section {
@@ -116,12 +116,12 @@ footer {
 
 form {
     max-width: 400px;
-    margin: 8rem auto; /* Espacio superior e inferior uniforme */
-    padding: 2rem; /* Incrementa el padding para mayor simetría */
+    margin: 8rem auto; 
+    padding: 2rem; 
     background: #fff;
-    border-radius: 12px; /* Bordes más redondeados para un diseño más moderno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
-    border: 1px solid #ccc; /* Agrega un borde sutil */
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ccc; 
 }
 
 form label {
@@ -152,7 +152,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /* Ocupa el 80% de la altura de la ventana */
+    min-height: 80vh; 
     padding: 1rem;
 }
 
